@@ -1,0 +1,34 @@
+{
+  "tripped": false,
+  "reason": null,
+  "tripped_at": null,
+  "daily_pnl": 0,
+  "consecutive_losses": 0,
+  "last_reset": "2026-04-09T01:43:58.114492",
+  "checks": [
+    {
+      "name": "Daily Drawdown",
+      "passed": true,
+      "message": "Daily drawdown 0.00% within limits",
+      "timestamp": "2026-04-09T18:05:02.118106"
+    },
+    {
+      "name": "Consecutive Losses",
+      "passed": true,
+      "message": "Consecutive losses (0) within limits",
+      "timestamp": "2026-04-09T18:05:02.118318"
+    },
+    {
+      "name": "Balance",
+      "passed": true,
+      "message": "Balance check skipped (no data)",
+      "timestamp": "2026-04-09T18:05:02.118717"
+    },
+    {
+      "name": "API Connectivity",
+      "passed": true,
+      "message": "API credentials configured",
+      "timestamp": "2026-04-09T18:05:02.119016"
+    }
+  ]
+}

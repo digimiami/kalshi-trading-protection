@@ -1,0 +1,295 @@
+/* Shopzario Custom CSS for Elementor */
+/* Add this to: Appearance -> Customize -> Additional CSS */
+
+/* Global Styles */
+:root {
+    --shopzario-primary: #FF6B6B;
+    --shopzario-secondary: #4ECDC4;
+    --shopzario-accent: #FFE66D;
+    --shopzario-dark: #2C3E50;
+    --shopzario-light: #F7F9FC;
+}
+
+/* Typography */
+body {
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+/* Primary Button */
+.shopzario-btn-primary {
+    background: var(--shopzario-primary);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.shopzario-btn-primary:hover {
+    background: #E55A5A;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 107, 0.3);
+}
+
+/* Secondary Button */
+.shopzario-btn-secondary {
+    background: transparent;
+    color: var(--shopzario-primary);
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid var(--shopzario-primary);
+    transition: all 0.3s ease;
+}
+
+.shopzario-btn-secondary:hover {
+    background: var(--shopzario-primary);
+    color: white;
+}
+
+/* Product Cards */
+.shopzario-product-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.shopzario-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+.shopzario-product-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.shopzario-product-card .product-info {
+    padding: 20px;
+}
+
+.shopzario-product-card .price {
+    color: var(--shopzario-primary);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.shopzario-product-card .add-to-cart {
+    background: var(--shopzario-primary);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shopzario-product-card .add-to-cart:hover {
+    background: #E55A5A;
+}
+
+/* Sale Badge */
+.shopzario-sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: var(--shopzario-primary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/* Header Styles */
+.shopzario-header {
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.shopzario-header .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.shopzario-header .nav-link:hover {
+    color: var(--shopzario-primary);
+}
+
+/* Announcement Bar */
+.shopzario-announcement {
+    background: var(--shopzario-primary);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Footer */
+.shopzario-footer {
+    background: var(--shopzario-dark);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.shopzario-footer a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.shopzario-footer a:hover {
+    color: var(--shopzario-primary);
+}
+
+/* Form Styles */
+.shopzario-input {
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    padding: 14px 18px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+.shopzario-input:focus {
+    border-color: var(--shopzario-primary);
+    outline: none;
+}
+
+/* Cart Styles */
+.shopzario-cart-icon {
+    position: relative;
+}
+
+.shopzario-cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--shopzario-primary);
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Category Cards */
+.shopzario-category-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.shopzario-category-card:hover {
+    transform: scale(1.02);
+}
+
+.shopzario-category-card .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+/* Testimonial Cards */
+.shopzario-testimonial {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+/* Newsletter Section */
+.shopzario-newsletter {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    padding: 100px 0;
+}
+
+.shopzario-newsletter input {
+    flex: 1;
+    padding: 18px 24px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.shopzario-newsletter button {
+    background: var(--shopzario-dark);
+    color: white;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.shopzario-newsletter button:hover {
+    background: #1a252f;
+}
+
+/* Trust Badges */
+.shopzario-trust-badge {
+    text-align: center;
+    padding: 20px;
+}
+
+.shopzario-trust-badge .icon {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .shopzario-hero h1 {
+        font-size: 36px !important;
+    }
+    
+    .shopzario-category-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    
+    .shopzario-product-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* Loading Animation */
+@keyframes shopzario-fade-in {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.shopzario-animate {
+    animation: shopzario-fade-in 0.6s ease forwards;
+}

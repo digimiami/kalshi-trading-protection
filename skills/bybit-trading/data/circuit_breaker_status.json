@@ -1,0 +1,10 @@
+{
+  "tripped": false,
+  "trip_reason": null,
+  "tripped_at": null,
+  "daily_pnl": 0.0,
+  "consecutive_losses": 0,
+  "last_reset": "2026-04-06T00:00:02.131426",
+  "checks_passed": 1435,
+  "checks_failed": 0
+}

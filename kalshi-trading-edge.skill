@@ -1,0 +1,45 @@
+kalshi-trading-edge.skill
+────────────────────────────────────────
+
+## Description
+
+Advanced Kalshi prediction market trading skill with edge detection, combining multiple data sources (FiveThirtyEight, ELO ratings, ESPN, line movement) to find profitable bets.
+
+## Features
+
+- Expected Value (EV) calculation
+- Kelly Criterion position sizing
+- FiveThirtyEight integration
+- ELO rating system
+- Line movement / sharp money detection
+- Multi-sport support (NBA, NHL, MLB, Tennis, Soccer, NFL, WNBA)
+- Portfolio correlation tracking
+- Daily loss limits
+
+## Usage
+
+```python
+from super_edge_bot import SuperEdgeBettingBot
+
+bot = SuperEdgeBettingBot(min_ev=0.05)
+asyncio.run(bot.run())
+```
+
+## Files
+
+- `super_edge_bot.py` - Main bot combining all sources
+- `edge_calculator.py` - EV math and Kelly sizing
+- `fivethirtyeight_api.py` - 538 predictions
+- `elo_rating_system.py` - ELO ratings
+- `line_movement_tracker.py` - Sharp money detection
+- `multi_sport_analyzer.py` - ESPN data
+- `market_tracker.py` - Position tracking
+- `daily_limits.py` - Risk management
+
+## Requirements
+
+See scripts/requirements.txt
+
+## License
+
+MIT
